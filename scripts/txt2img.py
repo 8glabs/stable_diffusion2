@@ -9,7 +9,7 @@ from itertools import islice
 from einops import rearrange
 from torchvision.utils import make_grid
 from pytorch_lightning import seed_everything
-from torch import autocast
+from torch.cuda.amp import autocast
 from contextlib import nullcontext
 from imwatermark import WatermarkEncoder
 
@@ -233,7 +233,7 @@ def main(opt):
 
     precision_scope = autocast if opt.precision == "autocast" else nullcontext
     with torch.no_grad(), \
-        precision_scope("cuda"), \
+        precision_scope(True), \
         model.ema_scope():
             all_samples = list()
             for n in trange(opt.n_iter, desc="Sampling"):
