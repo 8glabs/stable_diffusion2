@@ -1,0 +1,6 @@
+--2022-11-30 04:07:47--  https://cdn-lfs.huggingface.co/repos/18/fc/18fcc3be3bc3077cb1e70baea3953cce46fc54fc20aeba602201371707b7c2ed/d635794c1fedfdfa261e065370bea59c651fc9bfa65dc6d67ad29e11869a1824?response-content-disposition=attachment%3B%20filename%3D%22512-base-ema.ckpt%22
+Resolving cdn-lfs.huggingface.co (cdn-lfs.huggingface.co)... 18.154.185.27, 18.154.185.94, 18.154.185.26, ...
+Connecting to cdn-lfs.huggingface.co (cdn-lfs.huggingface.co)|18.154.185.27|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2022-11-30 04:07:47 ERROR 403: Forbidden.
+
